@@ -1,0 +1,94 @@
+/* 
+Author: PRF
+mm-yr: 12-2014
+Description: Styles for math geometry (triangles) project
+*/
+
+/* ---- GENERIC SETTINGS ---- */
+
+body { 
+    background-color: white;
+    color: black;
+    font-family: Arial, sans-serif;
+    margin: 0 2em 0 2em;  /* top, right, bottom, left */
+    /* Use em units instead of px because IE browser cant handle px*/
+    /* 1em=16px ... so 48px/16=3em */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 2em 0 1em 0; 
+}
+
+#d1 {   
+    background-color: lightgray;
+    padding: 1.1em 2em 1.1em 2em;
+}
+
+div.d2 {
+    padding: 1.1em 2em 1.1em 2em;
+}
+
+div.Canvas {   
+    width: 400px;
+    height: 400px;
+    margin: auto;  
+    /* using 50% places left edge of canvas at 50%; auto means browser decides */
+    /* border:1px solid red;
+    /* using 50% for margin places left edge of the division at 50%; 
+    auto means browser decides */
+}
+
+p.t1{  /* t for text */
+    font-size: 1.75em
+}
+
+p.t1Bold{  /* n for narrative */
+    /*margin-right: 3em;*/
+    font-size: 1.75em;
+    font-weight: bold
+}
+
+p.t2{  /* n for narrative */
+    color: black;
+    font-size: 1.5em
+}
+
+/* ---- IMAGES, GRAPHICS, WIDGET SETTINGS ---- */
+
+img.size
+{
+    height:100%;  /* Note: You cannot used % for sizing in HTMLv*/
+    width:100%;   /*    Percent of what? */
+}
+
+#bS1{
+    position:absolute;
+    left:58.5%;
+}
+
+#bS2{
+    position:absolute;
+    left:51%;
+}
+
+#bS3{
+    position:absolute;
+    left:43.5%;
+}
+
+#bS4{
+    position:absolute;
+    left:36%;
+}
+
+ul.a{
+    list-style-type:circle;
+    font-size: 1.75em;
+    margin-left: 5em;
+}
+
+#slider{
+    width: 400px;
+    margin:auto;
+}

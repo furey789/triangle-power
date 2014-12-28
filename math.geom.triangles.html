@@ -1,0 +1,299 @@
+<!--
+Author: PRF
+mm-yr: 12-2014
+Description: Main page on triagle geometry
+-->
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>MathEd Page 2</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
+        <link rel="stylesheet" href="bower_components/jquery-ui/themes/cupertino/jquery-ui.min.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+    </head>
+    
+    <body>
+        <h1>Triangle Geometry in:</h1> 
+        <table style="auto">   <!-- 100% of body width -->
+            <tr>
+                <td>
+                    <ul class="a">
+                        <li> <a href="#chemistry">Chemistry</a> </li>
+                        <li> <a href="#music">Music</a> </li>
+                        <li> <a href="#physics">Physics</a> </li>
+                        <!-- <li> <a href="#sports">Sports</a> </li> -->
+                    </ul>
+                </td>
+                <td><img src="data/image/triangles.png" alt="Triangles" width="200"/>
+                </td>
+            </tr>
+        </table>
+
+        
+        <hr>  <!-- a horizontal line or rule -->
+        
+        <div class="d2">
+            <p class="t1Bold">
+            <a id="chemistry">Chemistry</a>
+            </p>
+            <p class="t2">
+            The Equilateral Triangle
+            is found in physical chemistry where a Triangle Diagram is used to show how
+            3 different parts of a system are related, <b>relative to each other</b>.
+            </p>
+            <p class="t2">
+            Click inside the triangle below. Three numbers
+            appear beside the cursor and change as you click on different parts
+            of the triangle. Try to guess what these numbers mean.
+            </p>
+        </div>
+
+        <div class="Canvas">
+            <canvas id="canvas1" width="450" height="400"> 
+                    <!--style="border:0.1em solid #000000"> -->
+            </canvas>
+            <!--<button id="b0"> Whoa </button> -->
+            <button id="b1"> Next </button>
+        </div>
+        
+        <div class="d2">
+            <p class="t2">
+            A, B, and C represent components or parts of a system. 
+            The triangle edge given by the line segment AC
+            denotes B=0% (no B) while vertex labeled B denotes B=100% 
+            (all B). The same relationship holds for segment AB and vertex 
+            C and segment BC and vertex A.
+            </p>
+            <p class="t2">
+            Click on Next. The red line furthest to the right, closest to 
+            segment AC, represents B=10%. Moving right to left towards B, the red 
+            lines denote percentages of B that increase by 10% increments. 
+            Percentages for A and C follow the same logic along their own lines.
+            </p>
+            <p class="t2">
+            See if you can find the point where A=60%, B=10%, and C=30%, and then 
+            click on that point to see if you're correct.
+            </p>
+            <p class="t2">
+            Below is a Triangle Diagram for water, flour, and chocolate.
+            The blue circle in the figure shows the relative percentages of these ingredients
+            for cake batter. If the batter is heated to make a cake (yum), 
+            do you think the percentages will change?
+            </p>
+        </div>
+        
+        <div class="Canvas">
+            <canvas id="canvas2" width="450" height="400"> 
+                    <!--style="border:0.1em solid #000000">--> 
+            </canvas>
+            <button id="b2"> Next </button>
+            <br>
+        </div>
+
+        <div class="d2">
+            <p class="t2">
+            Click Next. As you can see, cooking the batter to make a cake (brown circle)
+            reduces the percentage of water. Why? Because some water evaporates. The 
+            percentages of flour and chocolate also change, since the water percentage
+            changes and the total of all three percentages must be 100. The 
+            amounts of flour and chocolate in the batter remain the same during cooking, 
+            and this feature is expressed by the ratio of their percentages, which
+            also remains the same.
+            </p>
+            <p class="t1">
+                <a href="#top" class="t2">Back to Top</a>
+            </p>
+        </div>
+        
+        <hr>  <!-- a horizontal line or rule -->
+
+        
+        <div class="d2">
+            <p class="t1Bold">
+            <a id="music">Music</a>
+            </p>
+            <p class="t2">
+            The harp is one of the earliest stringed instruments and 
+            dates back to Ancient Egypt circa 2500 BC.
+            </p>
+            <div style="text-align:center">
+                <!-- Source: https://eu.harp.com/history-of-the-harp.htm -->
+                <img src="data/image/angular-harp.jpg" alt="Angular Harp" width="200"/>
+            </div>
+            <p class="t2">Not surprisingly, the harp is triangular. 
+            The triangular shape allows for strings of different lengths 
+            to be placed in succession, from largest to smallest. This arrangement leads 
+            to a similar succession of musical notes, from lowest to highest. 
+            This order facilitates playing a harp, since it would be challenging to 
+            play one if note order was not so logical.
+            </p>
+            
+            <p class="t2">
+            The Right Triangle below represents a harp with four strings.
+            <!-- and serves to illustrate the logical nature of the harp as explained above.-->
+            </p>
+        </div>
+        
+        <div class="Canvas">
+            <canvas id="canvas3" width="450" height="400"> 
+                    style="border:0.1em solid #000000"> 
+            </canvas>
+            <button id="bS1"> S1 </button>
+            <button id="bS2"> S2 </button>
+            <button id="bS3"> S3 </button>
+            <button id="bS4"> S4 </button>
+            <!-- <div id="#test"> </div> -->
+        </div>
+        
+        <div class="d2">
+            <p class="t2">
+            Click on buttons S1, S2, and S4. Button S1 gives the sound of a C note for 
+            the short string in blue. String S2 is 2 times the length of string
+            S1 and gives the sound of a C note that is one octave lower. This same
+            effect occurs when doubling string S2 to get string S4. The sound of S4
+            is one octave lower than that of S2. Doubling string length
+            to obtain an octave difference in sound holds in the real world, given 
+            that strings are made of the same material and have the same thickness.
+            </p>
+            <p class="t2">
+            We can write an equation for the relationship between string 
+            length and musical note. Let <i> L<sub>0</sub> </i> be the length of string S1 and
+            <i>n</i> be the number of octaves above the note for the string. Then, 
+            string length <i>L</i> depends on <i>n</i> as 
+            <i>L(n) = 2<sup> n</sup>L<sub>0</sub></i>.
+            </p>
+            <p class="t2">
+            Click on button S3. String S3 is 3 times longer than the string S1.
+            It gives an F-sharp note that is between the C notes of strings S2 and S4.
+            </p>
+        </div>
+
+        <div class="Canvas">
+            <canvas id="canvas4" width="450" height="400"> 
+                    style="border:0.1em solid #000000"> 
+            </canvas>
+        </div>
+        
+        <div class="d2">
+            <p class="t2">
+            As shown above, the strings of our harp define four smaller 
+            triangles placed within the harp body. The body of our harp
+            and these four smaller triangles are <b>self-similar objects</b>, 
+            meaning that they're identical in shape
+            and each one is simply a re-scaled (enlarged or shrunken) version 
+            of the others.
+            </p>
+            <p class="t2">
+            Since the triangles are self-similar, if we double the length
+            of string S1 to get string S2, then we also double the base of triangle
+            S1 to get the base of triangle S2. This pattern holds when we take 3 and 4 times
+            the length of string S1. As a result, the distance between each of the
+            strings, along the base of our harp, is the same. This feature will hold if
+            the lower right angle of our harp takes on any value between 0 and 90
+            degrees.
+            </p>
+            <p class="t1">
+                    <a href="#top" class="t2">Back to Top</a>
+            </p> 
+        </div>
+
+        <hr>  <!-- a horizontal line or rule -->
+        
+        <div class="d2">
+            <p class="t1Bold">
+            <a id="physics">Physics</a>
+            </p>
+            <p class="t2">
+            There's an interesting connection between forces on an object and triangles.
+            In the circle below is a dot that we can think of as a brown boat in a circular
+            ocean. Let's suppose that the boat moves in a direction that is 
+            influenced by three forces: wind, ocean tide, and its own motor. Assume that these forces, when added, produce the net force on the boat.
+            </p>
+            <p class="t2">
+            Click on Wind & Tide and two arrows appear, each extending away from the boat.
+            The black arrow shows the direction of wind and its
+            length represents wind strength. Likewise, the blue arrow shows the direction
+            and strength of the ocean tide.
+            </p>
+        </div>
+        <div class="Canvas">
+            <canvas id="canvas5" width="450" height="400"> 
+            </canvas>
+            <button id="bwt"> Wind & Tide </button>
+            <button id="bdrift1"> Drift </button>
+            <button id="bformTriangle"> Form Triangle </button>
+        </div>
+        <div class="d2">
+            <p class="t2">
+            Now, click on Drift. As you can see, with wind and 
+            ocean tide forces <em>and no motor force</em>, the boat drifts away from the center of
+            the ocean. Click on Wind & Tide and Drift buttons again to see 
+            different drift conditions due to changes in the wind. Notice that the drift speed slows down as the wind direction becomes more opposing to the tide direction.
+            </p>
+            <p class="t2">
+            What direction and strength of motor force do we need to prevent the boat
+            from drifting? Well, we can determine this graphically, and not surprisingly
+            a triangle is involved. 
+            </p>
+            <p class="t2">
+            Click on the Form Triangle button and you'll see that the wind arrow has be re-positioned
+            so that the tide arrow points to its tail (the grey arrow). Notice that the
+            direction and length of the wind arrow remains the same as before. 
+            A third orange arrow has been added to form a triangle with the blue and grey
+            arrows. This arrow represents the motor force and direction that's
+            needed to stop the boat from drifting.
+            </p>
+            <p class="t2">
+            Why does this triangle method work? The x-components of the three arrows
+            sum to zero and so do the y-components.
+            </p>
+        </div>
+        <div class="Canvas">
+            <canvas id="canvas6" width="450" height="400"> 
+            </canvas>
+            <button id="bwtm"> Wind & Tide & Motor </button>
+            <button id="bdrift2"> Drift </button>
+        </div>
+        <p> 
+            <br />
+        </p>
+
+        <div id="slider"> 
+            <p>
+            <label for="sliderVal"> Value: </label>
+            <input type="text" id="sliderVal" readonly style="border:0; color:#f6931f; font-weight:bold;">
+            </p>
+        </div>
+
+        <div class="d2">
+            <p class="t2">
+            Click on Wind & Tide & Motor. Now, the forces you last examined are 
+            shown along with a weak motor force (orange arrow). 
+            The grey dot shows how far the orange arrow should extend to stop
+            boat drift. It represents the arrow determined from the triangle method.
+            </p> 
+            <p class="t2">
+            Click on Drift to see the result of having a weak motor force. 
+            Now, adjust the slider to change the motor force, and then click on Wind & Tide & Motor to see it. Click on Drift to see what it does to the boat.
+            </p>
+            <p class="t2">
+            With the motor force reaching the grey dot, there is no boat drift - thanks to triangles!
+            </p>
+            <p class="t1">
+                    <a href="#top" class="t2">Back to Top</a>
+            </p> 
+        </div>
+        
+        <!-- JS FILES-->
+        <!-- jquery-1.11.1.min.js, jquery-ui-1.11.2 -->
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"> </script>
+        <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"> </script>
+        <script type="text/javascript" src="mmDraw.js"> </script> 
+        <script type="text/javascript" src="math.geom.js"> </script>
+        
+    </body>
+    
+</html>

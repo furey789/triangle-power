@@ -1,0 +1,20 @@
+{
+  "name": "triangle-power",
+  "main": "math.geom.js",
+  "version": "1.0",
+  "description": "a source to learn how triangle geometry connects to the real world",
+  "keywords": [
+    "web",
+    "app"
+  ],
+  "dependencies": {
+   "jquery": "~1.11.1",
+   "jquery-ui": "~1.11.2"
+  },
+  "authors": [
+    "PRF"
+  ],
+  "license": "mul",
+  "homepage": "none",
+  "private": true
+}
